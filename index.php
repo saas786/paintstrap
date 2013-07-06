@@ -269,6 +269,10 @@ function gallery($app, $lang) {
 	));
 }
 
+
+//var_dump($app);
+//exit();
+
 $app->run();
 
 ?>

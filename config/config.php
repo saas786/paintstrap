@@ -8,9 +8,6 @@ define("BASE_URL", "http://localhost.experiments.com/twitter-bootstrap-customiza
 define("BASE_PATH", realpath(dirname(__FILE__) . "/../") . "/");
 
 
-//echo 'path: ' . BASE_PATH;
-//exitexit();
-
 define("DB_DSN", "mysql:dbname=paintstrap;host=localhost;port=3306");
 define("DB_USER", "root");
 define("DB_PASSWORD", "");
