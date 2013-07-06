@@ -13,12 +13,12 @@
 if ($c !== null) :
 ?>
 @black:                 #000;
-@grayDarker:            darken(#<?= $c[0] ?>, 10%);
-@grayDark:              #<?= $c[0] ?>;
-@gray:                  #<?= $c[6] ?>;
-@grayLight:             lighten(#<?= $c[6] ?>, 10%);
-@grayLighter:           #<?= $c[3] ?>;
-@white:                 #<?= $c[4] ?>;
+@grayDarker:            darken(#<?php echo $c[0]; ?>, 10%);
+@grayDark:              #<?php echo $c[0]; ?>;
+@gray:                  #<?php echo $c[6]; ?>;
+@grayLight:             lighten(#<?php echo $c[6]; ?>, 10%);
+@grayLighter:           #<?php echo $c[3]; ?>;
+@white:                 #<?php echo $c[4]; ?>;
 <?php
 else :
 ?>
@@ -57,7 +57,7 @@ endif;
 <?php
 if ($c !== null) :
 ?>
-@linkColor:             #<?= $c[1] ?>;
+@linkColor:             #<?php echo $c[1]; ?>;
 @linkColorHover:        darken(@linkColor, 15%);
 <?php
 else :
@@ -211,7 +211,7 @@ endif;
 <?php
 if ($c !== null) :
 ?>
-@navbarBackgroundHighlight:       #<?= $c[5] ?>;
+@navbarBackgroundHighlight:       #<?php echo $c[5]; ?>;
 <?php
 else :
 ?>
@@ -225,8 +225,8 @@ endif;
 <?php
 if ($c !== null) :
 ?>
-@navbarText:                      #<?= $c[2] ?>;
-@navbarLinkColor:                 #<?= $c[2] ?>;
+@navbarText:                      #<?php echo $c[2]; ?>;
+@navbarLinkColor:                 #<?php echo $c[2]; ?>;
 <?php
 else :
 ?>
